@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+#background {
+    opacity: 0.8;
+    object-fit: cover;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+    bottom: 0;
+}
+
+#form{
+    transition: top ease-in-out 0.6s;
+    position: absolute;
+    color: white;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.2 );
+    text-align: center;
+    border-radius: 20px;
+}
+
+    #form p{
+        margin-top: 20px;
+        font: 400 25px 'League Spartan', sans-serif;
+        text-shadow: rgb(0, 0, 0) 0 0 10px;
+    }
+
+    #form input{
+        font: 200 20px 'League Spartan', sans-serif;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: rgb(255, 255, 255) solid 1px;
+        color: white;
+        outline: none;
+        width: 340px;
+        height: 22px;
+        margin: 20px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    #form input::placeholder{
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    #form input:not(:placeholder-shown) {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    #form input:focus{
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    #form button{
+        font: 500 30px 'League Spartan', sans-serif;
+        width: 90%;
+        height: 55px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+
+    #form button:hover{
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        background-color: rgb(220, 220, 220);
+    }
+
+    #form button:active{
+        box-shadow: none;
+        background-color: rgb(153, 153, 153);
+    }
+
+        .ui-autocomplete {
+            display: none;
+            float: left;
+            min-width: 160px;
+            margin: 2px 0 0;
+            list-style: none;
+            font-size: 14px;
+            text-align: left;
+            border-radius: 4px;
+            background-clip: padding-box;
+        
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur( 7.5px );
+            -webkit-backdrop-filter: blur( 7.5px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.4);
+        }
+        
+        .ui-autocomplete > li > div {
+            display: block;
+            padding: 10px 14px;
+            background-color: rgba(0, 0, 0, 0.4);
+            font-weight: normal;
+            line-height: 1.42857143;
+            border: 1px solid rgba( 255, 255, 255, 0.6);
+            color: #ffffff;
+            margin: 4px;
+            border-radius: 8px;
+            font: 200 18px 'League Spartan', sans-serif;
+        }
+        
+        .ui-autocomplete > li > div:hover{
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .ui-state-hover,
+        .ui-state-active,
+        .ui-state-focus {
+            text-decoration: none;
+            border: none;
+            outline: none;
+            color: #262626;
+            background-color: #f5f5f5;
+            cursor: pointer;
+        }
+        
+        .ui-helper-hidden-accessible {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+        
+
+#areaProdutos{
+    width: 700px;
+    max-width: 95%;
+    margin: 285px auto 50px auto;
+}
+
+
+.produto{
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: rgb(255, 255, 255);
+}
+
+    .produto h3{
+        width: 80%;
+        font: 500 25px 'League Spartan', sans-serif;
+        text-shadow: rgba(0, 0, 0, 0.8) 0 0 10px;
+    }
+
+    .produto p{
+        font: 300 16px 'League Spartan', sans-serif;
+        margin-top: 10px;
+    }
+
+    .produto span{
+        font: 400 18px 'League Spartan', sans-serif;
+        position: absolute;
+        right: 15px;
+        top: 0;
+        display: flex;
+        height: 100%;
+        max-width: 20%;
+        align-items: center;
+    }
+    
+    .produto span img{
+        width: 15px;
+        fill: white;
+        transform: translateY(-2px);
+        margin-left: 10px;
+    }
+
